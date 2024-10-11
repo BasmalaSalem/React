@@ -1,0 +1,21 @@
+{
+  "firstName": "First Name",
+  "middleName": "Middle Name",
+  "lastName": "Last Name",
+  "nationality": "Nationality",
+  "description": "Description",
+  "placeOfBirth": "Place of Birth",
+  "score": "Score",
+  "submit": "Submit",
+  "loading": "Loading...",
+  "results": "Results",
+  "queryID": "Query ID",
+  "queryStatus": "Query Status",
+  "queryTime": "Query Time",
+  "resultTime": "Result Time",
+  "queryType": "Query Type",
+  "source": "Source",
+  "search": "Search",
+  "screenResult": "Screen Result",
+  "query_uuid": "Query UUID"
+}

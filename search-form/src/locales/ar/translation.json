@@ -1,0 +1,21 @@
+{
+  "firstName": "الاسم الأول",
+  "middleName": "اسم الأب",
+  "lastName": "اسم العائلة",
+  "nationality": "الجنسية",
+  "description": "الوصف",
+  "placeOfBirth": "مكان الولادة",
+  "score": "الدرجة",
+  "submit": "إرسال",
+  "loading": "جاري التحميل...",
+  "results": "النتائج",
+  "queryID": "معرّف الاستعلام",
+  "queryStatus": "حالة الاستعلام",
+  "queryTime": "وقت الاستعلام",
+  "resultTime": "وقت النتائج",
+  "queryType": "نوع الاستعلام",
+  "source": "مصدر",
+  "search": "بحث",
+  "screenResult": "نتيجة الشاشة",
+  "query_uuid": "معرف الاستعلام"
+}
