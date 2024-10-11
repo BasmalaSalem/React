@@ -17,5 +17,11 @@
   "source": "Source",
   "search": "Search",
   "screenResult": "Screen Result",
-  "query_uuid": "Query UUID"
+  "query_uuid": "Query UUID",
+  "english": "English",
+  "arabic": "Arabic",
+  "toggleDarkMode": "Toggle Dark Mode",
+  "searchPage": "Search Page",
+  "reset": "Reset",
+  "loading...": "Loading..."
 }

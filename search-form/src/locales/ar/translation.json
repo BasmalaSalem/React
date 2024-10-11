@@ -17,5 +17,11 @@
   "source": "مصدر",
   "search": "بحث",
   "screenResult": "نتيجة الشاشة",
-  "query_uuid": "معرف الاستعلام"
+  "query_uuid": "معرف الاستعلام",
+  "english": "إنجليزي",
+  "arabic": "عربي",
+  "toggleDarkMode": "تبديل اللوحة الخلفية",
+  "searchPage": "صفحة البحث",
+  "reset": "إعادة تعيين",
+  "loading...": "جاري التحميل..."
 }

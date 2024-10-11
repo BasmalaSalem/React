@@ -5,22 +5,7 @@ import * as yup from "yup";
 import axios from "axios";
 import Results from "./Results";
 import { useTranslation } from "react-i18next";
-import { changeLanguage } from "i18next";
 
-// const schema = yup
-//   .object()
-//   .shape({
-//     fname: yup.string().optional(),
-//     mname: yup.string().optional(),
-//     lname: yup.string().optional(),
-//     nat: yup.string().optional(),
-//     description: yup.string().optional(),
-//     placeOfBirth: yup.string().optional(),
-//     score: yup.number().optional().min(0).max(100),
-//   })
-//   .test("at-least-one-name", "At least one name field is required", (value) => {
-//     return !!value.fname || !!value.mname || !!value.lname;
-//   });
 const schema = yup.object().shape({
   fname: yup.string().required(),
   mname: yup.string().optional(),
@@ -86,13 +71,13 @@ const SearchForm: React.FC = () => {
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full md:w-auto dark:bg-blue-600 dark:hover:bg-blue-700"
           onClick={() => changeLanguage("en")}
         >
-          English
+          {t("english")}
         </button>
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full md:w-auto dark:bg-blue-600 dark:hover:bg-blue-700"
           onClick={() => changeLanguage("ar")}
         >
-          Arabic
+          {t("arabic")}
         </button>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -196,7 +181,7 @@ const SearchForm: React.FC = () => {
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full dark:bg-blue-600 dark:hover:bg-blue-700 disabled:opacity-50"
             disabled={isLoading}
           >
-            {isLoading ? "Loading..." : "Submit"}
+            {isLoading ? t("loading...") : t("submit")}
           </button>
 
           <button
@@ -204,16 +189,9 @@ const SearchForm: React.FC = () => {
             onClick={handleReset}
             className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded w-full dark:bg-gray-600 dark:hover:bg-gray-700"
           >
-            Reset
+            {t("reset")}
           </button>
         </div>
-        {errors.fname || errors.mname || errors.lname ? (
-          <p className="text-red-500 mt-4 text-sm">
-            {errors.fname?.message ||
-              errors.mname?.message ||
-              errors.lname?.message}
-          </p>
-        ) : null}
         {error && <p className="text-red-500 mt-4 text-sm">{error}</p>}
       </form>
 
